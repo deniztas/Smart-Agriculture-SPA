@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/public/vendor/bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/public/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <script src="/public/js/angular.js"></script>
+
+    <!-- DataTables CSS -->
+    <link href="/public/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="/public/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/public/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/public/vendor/font-awesome2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" ng-app="App">
+
+ <div id="wrapper">
+
+        <!-- Navigation -->
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Admin Panel</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right fixed-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>19.02.2018</em>
+                                    </span>
+                                </div>
+                                <div>HELLO ADMIN</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>03.03.2018</em>
+                                    </span>
+                                </div>
+                                <div>HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN HELLO ADMIN </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>19.02.2018</em>
+                                    </span>
+                                </div>
+                                <div>HELLO ADMIN</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="index.html">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#team"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav collapse navbar-collapse"id="navbarResponsive">
+                    <ul class="nav ml-auto " id="side-menu">
+                        
+						<li class="nav-item">
+						  <a class="nav-link js-scroll-trigger" href="#home"><i class="fa fa-dashboard fa-fw"></i> Home Page</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link js-scroll-trigger" href="#services"><i class="fa fa-codepen fa-fw"></i>Services</a>
+						</li>
+						 <li class="nav-item">
+						  <a class="nav-link js-scroll-trigger" href="#projects"><i class="fa fa-tasks fa-fw"></i>Projects</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-history fa-fw"></i>About</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link js-scroll-trigger" href="#team"><i class="fa fa-users fa-fw"></i>Team</a>
+						</li>
+					
+					  
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+     </nav>
+	 
+	 
+	<section id="home">
+	
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"></h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+						  
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><%=messages.length%></div>
+                                    <div>New Messages!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#messages">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><%=projects.length%></div>
+                                    <div>Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#projects">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-users fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><%=team.length%></div>
+                                    <div>Member!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#team">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <section id="messages">
+			    <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Content</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% for(var i = 0; i<messages.length; i++){ %>
+									    <tr class="odd">
+                                            <td><%=messages[i].name%></td>
+                                            <td><%=messages[i].email%></td>
+                                            <td><%=messages[i].phone%></td>
+										    <td><%=messages[i].message%></td>
+                                            <td>
+											    <button id="<%=messages[i]._id%>" type="button" class="btn btn-danger deleteMessage">Delete</button>
+										    </td>
+                                        </tr>
+                                        <%}%>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </section>
+        </div>
+        <!-- /#page-wrapper -->
+	</section>
+	
+    <br/><br/><br/>
+
+		<section id="services">
+		<div id="page-wrapper">
+		   
+            <div class="row">
+			    <br/><br/>
+                <div class="col-lg-12">
+                    <h1 class="page-header">Services</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                      
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+           <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Operation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd gradeX">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                         <td>  
+										    <a data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary" >Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                        
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.0</td>
+                                        <td>Win 95+</td>
+                                           <td>  
+										    <a data-toggle="modal" href="#updateServicesModel">
+										
+											<button type="button" class="btn btn-primary" >Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                  
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.5</td>
+                                        <td>Win 95+</td>
+                                        <td>  
+										    <a data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary">Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                      
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 6</td>
+                                        <td>Win 98+</td>
+                                       <td>  
+										    <a data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary" >Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>  
+									       <a class="portfolio-link" data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary">Update</button>
+										   </a>  
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    </tr>
+                                         <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>  
+									        <a data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary">Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    </tr>
+                                         <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>  
+									        <a  data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary">Update</button>
+										    </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    </tr>
+									     <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>  
+									         <a data-toggle="modal" href="#updateServicesModel">
+											<button type="button" class="btn btn-primary">Update</button>
+										     </a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    </tr>
+                               
+                                  
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+								<a data-toggle="modal" href="#addServicesModel">
+								<div style="float:right; margin:5px;" ><button type="button" class="btn btn-success">Add New Item</button></div>
+								</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+          
+            <!-- /.row -->
+       
+            <!-- /.row -->
+
+            <!-- /.row -->
+        </div>
+
+    </section>
+  <!-- Model Update Services -->
+    <div class="modal fade" id="updateServicesModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Services Update Page</h2>
+                       <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file">
+                                        </div>
+                                        
+                                </div>
+                              
+                            </div>
+                            <!-- /.row (nested) -->
+                        
+                            <button type="button" class="btn btn-success">Update</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	  <!-- Model Add Services -->
+	      <div class="modal fade" id="addServicesModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog"  style="width:50%">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Services Adding Page</h2>
+                           <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file">
+                                        </div>
+                                </div>
+                            
+                                       
+                            </div>
+                            <!-- /.row (nested) -->
+                        
+                   <button type="button" class="btn btn-success">Add</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<br/><br/><br/><br/><br/>
+	
+   <section id="projects">
+	
+	  <div id="page-wrapper">
+            <div class="row">
+			<br/><br/><br/><br/>
+                <div class="col-lg-12">
+                    <h1 class="page-header">Projects</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                     
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Project Image</th>
+                                        <th>Project Title</th>
+                                        <th>Project Subtitle</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Opetations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                    <% for(var i = 0; i<projects.length; i++){ %>
+                                    <tr class="odd gradeA">
+                                        <td><%=projects[i].image%></td>
+                                        <td><%=projects[i].title%></td>
+                                        <td><%=projects[i].subtitle%></td>
+                                        <td class="center"><%=projects[i].description%></td>
+                                        <td class="center"><%=projects[i].date%></td>
+                                        <td class="center sorting_1"> 
+                                            <a data-toggle="modal" href="#updateProjectModel">
+                                                <button id="<%=projects[i]._id%>" type="button" class="btn btn-primary updateProject">Update</button>
+                                                <!--<button id="<%=projects[i]._id%>" type="button" class="btn btn-primary updateProject" ng-click='update(projects[i]._id)'>Update</button>-->
+                                            </a>
+                                            <button id="<%=projects[i]._id%>" type="button" class="btn btn-danger deleteProject">Delete</button>  
+                                        </td>
+                                    </tr>
+                                    <%}%>
+                                    
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+							<a data-toggle="modal" href="#addProjectModel">
+								<div style="float:right; margin:5px;" ><button type="button" class="btn btn-success insertProject">Add New Item</button></div>
+							</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+           
+
+        </div>
+	     
+	
+    <!--Model Update Project-->
+    
+
+	    <div class="modal fade" id="updateProjectModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="width:50%">
+        <div class="modal-content" >
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Update Page</h2>
+                           <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Project Name</label>
+                                            <input id='title' class="form-control">
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <label>Content</label>
+                                            <textarea class="form-control" id='subtitle' rows="3"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label>Description</label>
+                                                <textarea class="form-control" id='description' rows="3"></textarea>
+                                            </div>
+										 <div>
+
+                                            <label>Date</label>
+                                            <input class="form-control" id='date'>
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file">
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                            </br>
+                           
+                                                
+                            <button type="button" class="btn btn-success saveUpdate">Save Changes</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--Model Add Project-->
+   <div class="modal fade" id="addProjectModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Project Adding Page</h2>
+                           <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Project Title</label>
+                                            <input name="title" class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Project Subtitle</label>
+                                            <input name="subtitle" class="form-control" placeholder="Enter text">
+                                        </div>
+                                                                                
+                                       <div class="form-group">
+                                            <label>Project Description</label>
+                                            <textarea name="description" class="form-control" rows="3" placeholder="Enter text"></textarea>
+                                        </div>
+                                        <div>
+                                            <label>Date</label>
+                                            <input name="date" class="form-control" placeholder="Enter Date">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>                                          
+                                            <input ng-model="image" type="file">
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        </br>
+                        <button type="button" id="addNewProjectButton" class="btn btn-success saveProject">Add Project</button>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    </section>
+	<br/><br/><br/>
+	<section id="about">
+	  <div id="page-wrapper">
+            <div class="row">
+			 <br/><br/>
+                <div class="col-lg-12">
+                    <h1 class="page-header">About</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Operation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd gradeX">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                        <td>  
+									 <a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                        
+                                    </tr>
+                                    <tr class="even gradeC">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.0</td>
+                                        <td>Win 95+</td>
+                                         <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                  
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.5</td>
+                                        <td>Win 95+</td>
+                                        <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                      
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 6</td>
+                                        <td>Win 98+</td>
+                                      <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    
+                                    </tr>
+                                    <tr class="odd gradeA">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                       <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                    </tr>
+                                    <tr class="even gradeA">
+                                        <td>Trident</td>
+                                        <td>AOL browser (AOL desktop)</td>
+                                        <td>Win XP</td>
+                                       <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                        
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                          <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+										<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                     
+                                    </tr>
+                                    <tr class="gradeA">
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.5</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>  
+										<a class="btn btn-primary" data-toggle="modal" href="#updateAboutModel">Update</a>
+											<button type="button" class="btn btn-danger">Delete</button>
+										</td>
+                                
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                          <a data-toggle="modal" href="#addAboutModel">
+						  <div style="float:right; margin:5px;">
+                              <button type="button" class="btn btn-success">Add New Item</button>
+                            </div>
+						 </a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- Model Update About -->
+     <div class="modal fade" id="updateAboutModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="width:50%">
+        <div class="modal-content" >
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">About Update Page</h2>
+                             <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                      
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file">
+                                        </div>
+                                        
+                                </div>
+                            
+                            </div>
+                            <!-- /.row (nested) -->
+                        
+                            <button type="button" class="btn btn-success">Update</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!--Model Add About -->
+   <div class="modal fade" id="addAboutModel" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">About Adding Page</h2>
+                     <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                    
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+           
+                             
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        
+                         
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>                       
+			</br>
+                     <button type="button" class="btn btn-success">Add</button>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+	<br/><br/><br/><br/><br/>
+	<section id="team">
+	<br/><br/><br/>
+	  <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Team</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Admin Name</th>
+                                        <th>Admin Surname</th>
+                                        <th>Admin Authority</th>
+                                        <th>Title</th>
+                                        <th>Admin Username</th>
+                                        <th>Admin Password</th>                                        
+                                        <th>Picture</th>
+                                        <th>Twitter</th>
+                                        <th>Facebook</th>
+                                        <th>LinkedIn</th>
+                                        <th>Opetations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i<team.length; i++){ %>
+                                    <tr class="odd gradeX">                                        
+                                        <td><%=team[i].name%></td>
+                                        <td><%=team[i].surname%></td>
+                                        <td><%=team[i].authority%></td>
+                                        <td><%=team[i].title%></td>
+                                        <td><%=team[i].username%></td>
+                                        <td><%=team[i].password%></td>                                        
+                                        <td><%=team[i].image%></td>
+                                        <td><%=team[i].twitter%></td>
+                                        <td><%=team[i].facebook%></td>
+                                        <td><%=team[i].linkedin%></td>
+                                        <td class="center sorting_1"> 
+                                                <a data-toggle="modal" href="#updateTeamModel">
+                                                        <button id="<%=team[i]._id%>" type="button" class="btn btn-primary updateTeam">Update</button></a>                                               
+                                                <button id="<%=team[i]._id%>" type="button" class="btn btn-danger deleteTeam">Delete</button>  
+                                        </td>                                  
+                                    </tr>
+                                    <%}%>
+                                </tbody>
+                            </table>
+					    <a data-toggle="modal" href="#addTeamModel">
+						   <div style="float:right; margin:5px;" >
+                               <button type="button" class="btn btn-success">Add New Item</button></div>
+						 </a>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+           
+        </div>
+	
+<!--Model Update Team-->
+	    <div class="modal fade" id="updateTeamModel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" style="width:50%">
+        <div class="modal-content" >
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Team Update Page</h2>
+                        <div class="row">
+                                <div class="col-lg-6">
+                                    <form  role="form">
+                                        
+                                        <div class="form-group">
+                                            <label style="margin-top:10px;">Name</label>
+                                            <input id="name" class="form-control" placeholder="Enter name">
+                                            <label style="margin-top:10px;">Surname</label>
+                                            <input id="surname" class="form-control" placeholder="Enter surname">
+                                            <label style="margin-top:10px;">Title</label>
+                                            <input id="title" class="form-control" placeholder="Enter title">
+                                            <label style="margin-top:10px;">Authority</label>
+                                            <input id="authority" class="form-control" placeholder="Enter name">                                        
+                                            <label style="margin-top:10px;">Username</label>
+                                            <input id="username" class="form-control" placeholder="Enter title">
+                                            <label style="margin-top:10px;">Password</label>
+                                            <input id="password" class="form-control" placeholder="Enter title">
+                                            <label style="margin-top:10px;">Twitter Link</label>
+                                            <input id="twitter" class="form-control" placeholder="Enter link">
+                                            <label style="margin-top:10px;">Facebook Link</label>
+                                            <input id="facebook" class="form-control" placeholder="Enter link">
+                                            <label style="margin-top:10px;">LinkedIn Link</label>
+                                            <input id="linkedin" class="form-control" placeholder="Enter link">
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                      <div class="form-group">
+                                            <label>Image</label>
+                                            <input id="image" type="file">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        
+                            <button type="button" class="btn btn-success saveUpdateTeam">Save Changes</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--Model Add Team-->
+    <div class="modal fade" id="addTeamModel" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" style="width:50%">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Team Adding Page</h2>
+                             <div class="row">
+                                  <div class="col-lg-6">
+                                      <form id='teamForm' role="form">
+                                          
+                                          <div class="form-group">
+                                              <label>Name</label>
+                                              <input name="name" class="form-control" placeholder="Enter text">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Surname</label>
+                                              <input name="surname" class="form-control" placeholder="Enter text">
+                                          </div>
+                                                                                  
+                                         <div class="form-group">
+                                              <label>Authority</label>
+                                              <textarea name="authority" class="form-control" rows="3" placeholder="Enter text"></textarea>
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Title</label>
+                                              <input name="title" class="form-control" placeholder="Enter Date">
+                                          </div>
+                                          <div class="form-group">
+                                            <label>Username</label>
+                                            <input name="username" class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input name="password" class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Twitter</label>
+                                            <input name="twitter" class="form-control" placeholder="Enter Date">
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Facebook</label>
+                                          <input name="facebook" class="form-control" placeholder="Enter text">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>LinkedIn</label>
+                                          <input name="linkedin" class="form-control" placeholder="Enter text">
+                                      </div>                                
+                                      </form>
+                                  </div>
+                                  <!-- /.col-lg-6 (nested) -->
+                                  <div class="col-lg-6">
+                                        <div class="form-group">
+                                              <label>Image</label>                                          
+                                              <input ng-model="image" type="file">
+                                          </div>
+                                         
+                                  </div>
+                              </div>
+                              <!-- /.row (nested) -->
+                          </br>
+                          <button type="button" id="addNewTeamButton"  class="btn btn-success saveTeam">Add Team Member</button>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fa fa-times"></i>Close Page</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+</section>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="/public/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/public/vendor/bootstrap2/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/public/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="/public/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/public/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/public/vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/public/dist/js/sb-admin-2.js"></script>
+    <script src="/public/js/adminPanel.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>
